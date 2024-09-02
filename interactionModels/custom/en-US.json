@@ -1,0 +1,260 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "medicine",
+              "type": "medicines"
+            },
+            {
+              "name": "timetotake",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "name": "AddMedicineIntent",
+          "samples": [
+            "remind me about {medicine} at {timetotake} every day",
+            "schedule {medicine} at {timetotake}",
+            "set a reminder for {medicine} at {timetotake} ",
+            "remind me to take {medicine} at {timetotake}",
+            "add {medicine} at {timetotake}  to my reminders ",
+            "add {medicine} to my reminders",
+            "remind me to take {medicine}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "medicine",
+              "type": "medicines"
+            }
+          ],
+          "name": "DeleteMedicineIntent",
+          "samples": [
+            "remove {medicine} from my reminders",
+            "forget about {medicine}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetRemindersIntent",
+          "samples": [
+            "what are my reminders",
+            "list my reminders",
+            "tell me my reminders"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "disease",
+              "type": "disease"
+            }
+          ],
+          "name": "GetSymptomsIntent",
+          "samples": [
+            "what are the symptoms of {disease}",
+            "tell me about {disease} symptoms"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetHospitalIntent",
+          "samples": [
+            "find me a nearby hospital",
+            "locate the nearest hospital"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "symptoms",
+              "type": "symptoms"
+            }
+          ],
+          "name": "GetCausesIntent",
+          "samples": [
+            "Why am I having {symptoms}",
+            "What are the potential causes of {symptoms}",
+            "Can you tell me the cause of {symptoms}",
+            "What could be causing {symptoms}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ThankYouIntent",
+          "samples": [
+            "no need",
+            "thank you for the services",
+            "no thank you",
+            "thank you",
+            "no"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "flu"
+              }
+            },
+            {
+              "name": {
+                "value": "cold"
+              }
+            },
+            {
+              "name": {
+                "value": "diabetes"
+              }
+            },
+            {
+              "name": {
+                "value": "asthma"
+              }
+            },
+            {
+              "name": {
+                "value": "fever"
+              }
+            }
+          ],
+          "name": "disease"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Zoloft"
+              }
+            },
+            {
+              "name": {
+                "value": "Adderall"
+              }
+            },
+            {
+              "name": {
+                "value": "Lipitor"
+              }
+            },
+            {
+              "name": {
+                "value": "Ibuprofen"
+              }
+            },
+            {
+              "name": {
+                "value": "aspirin"
+              }
+            },
+            {
+              "name": {
+                "value": "paracetamol"
+              }
+            }
+          ],
+          "name": "medicines"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "skin rash and itching"
+              }
+            },
+            {
+              "name": {
+                "value": "joint swelling and stiffness"
+              }
+            },
+            {
+              "name": {
+                "value": "chest pain and tightness"
+              }
+            },
+            {
+              "name": {
+                "value": "abdominal pain and diarrhea"
+              }
+            },
+            {
+              "name": {
+                "value": "nausea and vomiting"
+              }
+            },
+            {
+              "name": {
+                "value": "shortness of breath"
+              }
+            },
+            {
+              "name": {
+                "value": "muscle pain and fatigue"
+              }
+            },
+            {
+              "name": {
+                "value": "severe headache"
+              }
+            },
+            {
+              "name": {
+                "value": "fever and chills"
+              }
+            },
+            {
+              "name": {
+                "value": "a persistent cough"
+              }
+            },
+            {
+              "name": {
+                "value": "I have a red rash on my forearm that appeared suddenly last night. It does not itch or hurt."
+              }
+            }
+          ],
+          "name": "symptoms"
+        }
+      ],
+      "invocationName": "health bot"
+    }
+  }
+}
